@@ -1,11 +1,13 @@
 import React from "react";
 
 const ListGroup = () => {
-  const items = ["Delhi", "New York", "Mumbai", "Bangalore", "Tokyo"];
+  let items = ["Delhi", "New York", "Mumbai", "Bangalore", "Tokyo"];
+  //   items = [];
 
   return (
     <>
       <h1>List Items</h1>
+      {items.length === 0 && <p> No items to display</p>}
       <ul className="list-group">
         {/* <li className="list-group-item">An item</li>
         <li className="list-group-item">A second item</li>
