@@ -4,6 +4,9 @@ const ListGroup = () => {
   let items = ["Delhi", "New York", "Mumbai", "Bangalore", "Tokyo"];
   //   items = [];
 
+  const handleClick = (event: React.MouseEvent) => {
+    console.log(event);
+  };
   return (
     <>
       <h1>List Items</h1>
@@ -15,7 +18,14 @@ const ListGroup = () => {
         <li className="list-group-item">A fourth item</li>
         <li className="list-group-item">And a fifth one</li> */}
         {items.map((item) => (
-          <li key={item}>{item}</li>
+          <li
+            className="list-group-item"
+            key={item}
+            // onClick={() => console.log(item)}
+            onClick={handleClick}
+          >
+            {item}
+          </li>
         ))}
       </ul>
     </>
