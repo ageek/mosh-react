@@ -10,7 +10,7 @@ const App2 = () => {
       <Alert>This is 2nd alert</Alert>
       <Button children="Click me" type="primary" />
       <Button children="Click for warning" type="warning" />
-      <Button children="Click for success" type="success" />
+      <Button type="success">Click for success </Button>
     </div>
   );
 };
