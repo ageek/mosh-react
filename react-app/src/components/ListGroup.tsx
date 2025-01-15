@@ -1,16 +1,22 @@
 import { useState } from "react";
 
-const ListGroup = () => {
-  const items = ["Delhi", "New York", "Mumbai", "Bangalore", "Tokyo"];
+interface Props {
+  items: string[];
+  heading: string;
+}
+
+function ListGroup({ items, heading }: Props) {
+  //   const items = ["Delhi", "New York", "Mumbai", "Bangalore", "Tokyo"];
   //   items = [];
 
   const [selectedIndex, setSelectedIndex] = useState(-1);
   //   const handleClick = (event: React.MouseEvent) => {
   //     console.log(event);
   //   };
+
   return (
     <>
-      <h1>List Items</h1>
+      <h1>List of {heading}</h1>
       {items.length === 0 && <p> No items to display</p>}
       <ul className="list-group">
         {/* <li className="list-group-item">An item</li>
@@ -39,6 +45,6 @@ const ListGroup = () => {
       </ul>
     </>
   );
-};
+}
 
 export default ListGroup;
