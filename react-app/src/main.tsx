@@ -3,10 +3,11 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import "bootstrap/dist/css/bootstrap.css";
+import App2 from "./App2.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-    {/* <Message /> */}
+    {/* <App /> */}
+    <App2 />
   </StrictMode>
 );
