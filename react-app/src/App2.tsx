@@ -1,4 +1,5 @@
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 const App2 = () => {
   return (
@@ -7,6 +8,9 @@ const App2 = () => {
         This is <i>first</i> alert
       </Alert>
       <Alert>This is 2nd alert</Alert>
+      <Button children="Click me" type="primary" />
+      <Button children="Click for warning" type="warning" />
+      <Button children="Click for success" type="success" />
     </div>
   );
 };
