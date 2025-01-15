@@ -6,6 +6,10 @@ function App() {
   return (
     <div>
       <ListGroup items={items} heading="Cities"></ListGroup>
+      <ListGroup
+        items={["Python", "Java", "C++", "C"]}
+        heading="Languages"
+      ></ListGroup>
     </div>
   );
 }
