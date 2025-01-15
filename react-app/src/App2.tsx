@@ -3,7 +3,10 @@ import Alert from "./components/Alert";
 const App2 = () => {
   return (
     <div>
-      <Alert></Alert>
+      <Alert>
+        This is <i>first</i> alert
+      </Alert>
+      <Alert>This is 2nd alert</Alert>
     </div>
   );
 };
