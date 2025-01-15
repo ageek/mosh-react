@@ -12,7 +12,7 @@ const App2 = () => {
         This is <i>first</i> alert
       </Alert>
       <Alert>This is 2nd alert</Alert>
-      <Button children="Click me" color="primary" handleClick={clickHandler} />
+      <Button children="Click me" handleClick={clickHandler} />
       <Button
         children="Click for warning"
         color="warning"

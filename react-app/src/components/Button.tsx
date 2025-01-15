@@ -1,10 +1,18 @@
 interface Props {
   children?: React.ReactNode;
-  color: string;
+  color?:
+    | "primary"
+    | "secondary"
+    | "success"
+    | "danger"
+    | "warning"
+    | "info"
+    | "light"
+    | "dark";
   handleClick: () => void;
 }
 
-const Button = ({ children, color, handleClick }: Props) => {
+const Button = ({ children, color = "primary", handleClick }: Props) => {
   return (
     <div>
       <button
